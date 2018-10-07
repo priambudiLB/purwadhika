@@ -1,0 +1,63 @@
+<script>
+// let z='';
+// for (let i=1; i<=5; i++){
+//     for (let j=0; j<i ;j++){
+//         z += ' * '
+//     }
+//     z += '<br>'
+// }
+
+// document.write(z);
+
+// let z='';
+// for (let i=1; i<=5; i++){
+//     for (let j=5; j>=i ;j--){
+//         z += ' * '
+//     }
+//     z += '<br>'
+// }
+
+// document.write(z);
+
+
+// var z='';
+// for (let i=1; i<=5; i++){
+//     for (let j=5; j>=i ;j--){
+//         z += ' * '
+//     }
+//     z += '<br>'
+// }
+// for (let i=1; i<=5; i++){
+//     for (let j=0; j<i ;j++){
+//         z += ' * '
+//     }
+//     z += '<br>'
+// }        
+
+// document.write(z);
+
+// let z='';
+// for (let i=1; i<=5; i++){
+//     for (let j=5; j>=i ;j--){
+//         z += '&nbsp&nbsp&nbsp&nbsp&nbsp'
+//     }
+//     for (let j=1; j<=i*2-1 ;j++){
+//         z += ' &nbsp*&nbsp'
+//     }
+//     z += '<br>'
+// }
+
+let z='';
+var jml2 = 5;
+var jml = jml2*2-1;
+for (let i=1; i<=jml; i++){
+    for (let j=1; j<=i ;j++){
+        z += '&nbsp&nbsp&nbsp&nbsp&nbsp'
+    }
+    for (let j=jml; j>=i*2-1 ;j--){
+        z += ' &nbsp*&nbsp'
+    }
+    z += '<br>'
+}
+ document.write(z);
+</script>

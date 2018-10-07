@@ -1,0 +1,25 @@
+<script>
+var arBarang = [
+    ['B001', 'Pensil', 5000],
+    ['B002', 'Pulpen', 3000],
+    ['B003', 'Penghapus', 2000],
+    ['B004', 'Penggaris', 1000],
+];
+
+document.write("<table border='1' width='100%' rules='all'>");
+document.write("<tr>");
+document.write("<th>Kode</th>");
+document.write("<th>Nama</th>");
+document.write("<th>Harga</th>");
+document.write("</tr>");
+for (var i = 0; i<arBarang.length; i++){
+    document.write("<tr>")
+    for (var j = 0; j<arBarang[i].length; j++){
+        document.write("<td>");
+        document.write(arBarang[i][j]);
+        document.write("</td>");
+    }
+    document.write("</tr>");
+}
+document.write("</table>");
+</script>

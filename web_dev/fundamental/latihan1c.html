@@ -1,0 +1,20 @@
+<script>
+    var nama = prompt('Nama:');
+    var tanggalLahir = prompt('Tanggal Lahir:');
+    var alamat = prompt('Alamat Lengkap:');
+    var jenjangPendidikan = prompt('Jenjang Pendidikan Terakhir:');
+    var simpanData = confirm("simpan data?");
+
+    if (simpanData){
+        console.log("Data saved\n\nNama: "+nama+"\nTanggal Lahir: "+tanggalLahir
+        +"\nAlamat: "+alamat+"\nJenjang Pendidikan Terakhir: "
+        +jenjangPendidikan);
+
+        alert("Nama: "+nama+"\nTanggal Lahir: "+tanggalLahir
+        +"\nAlamat: "+alamat+"\nJenjang Pendidikan Terakhir: "
+        +jenjangPendidikan);
+    } else {
+        console.log("Failed to save data");
+        alert("Failed to save data");
+    }
+</script>

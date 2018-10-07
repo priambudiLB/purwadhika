@@ -1,0 +1,34 @@
+<form>
+    Fisika: <input type="number" id="fisika"><br>
+    Kimia: <input type="number" id="kimia"><br>
+    Biologi: <input type="number" id="biologi"><br>
+    Matematika: <input type="number" id="matematika"><br>
+    Komputer: <input type="number" id="komputer"><br>
+    <input type="button" value="Tampil Grade" onclick='process()'>
+</form>
+
+<label id="txtHasil">ff</label>
+
+<script>
+function process(){
+    var fisika = document.getElementById('fisika').value;
+    var kimia = document.getElementById('kimia').value;
+    var biologi = document.getElementById('biologi').value;
+    var matematika = document.getElementById('matematika').value;
+    var komputer = document.getElementById('komputer').value;
+    var rata = 0;
+    rata = (fisika+kimia+biologi+matematika+komputer)/5;
+    alert(rata);
+    var grade = "";
+    if(rata>=90){
+        grade="A";
+    }else if(rata>=80){
+        grade="B";
+    }else if(rata>=70){
+        grade="C";
+    }else{
+        grade="D";
+    document.getElementById('txtHasil').innerHTML = grade;
+    }
+}
+</script>

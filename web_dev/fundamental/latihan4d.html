@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Purwadhika</title>
+</head>
+<body>
+Jabatan: <input type="text" id='Jabatan'><br>
+Anak: <input type="text" id='Anak'><br>
+<input type="button" value="masuk" onclick="cek_login()">
+
+</body>
+</html>
+
+<script>
+function cek_login() {
+    var jabatan = document.getElementById('Jabatan').value;
+    var anak = document.getElementById('Anak').value;
+
+    if (jabatan == "Manager"){
+        if (anak == 0){
+            alert("Gaji pokok: 10.000");
+        } else if (anak>1){
+            alert("Gaji pokok: "+(10000+(anak*200)));
+        }
+    } else if (jabatan == "Staff"){
+        if (anak==0){
+            alert("Gaji pokok: 8.000");
+        } else if (anak>1){
+            alert("Gaji pokok: "+(8000+(anak*150)));
+        }
+    } else if (jabatan == "OB"){
+        alert("Gaji pokok: 5.000");
+    }
+    
+}
+
+</script>

@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form>
+        <h3>1. Siapakah Presiden ketiga RI?</h3><br>
+        <input type='radio' id='txt11' name="satu" value="benar">Prof. B.J.Habibie
+        <input type='radio' id='txt12' name="satu" value="salah">Abdurrahman Wahid
+        <input type='radio' id='txt13' name="satu" value="salah">Ir. Soekarno
+        <input type='radio' id='txt14' name="satu" value="salah">Joko Widodo<br><br>
+        <h3>2. Berikut adalah nama-nama bahasa pemrograman, kecuali..</h3><br>
+        <input type='radio' id='txt21' name="dua" value="salah">Python
+        <input type='radio' id='txt22' name="dua" value="benar">Micro:bit
+        <input type='radio' id='txt23' name="dua" value="salah">JavaScript
+        <input type='radio' id='txt24' name="dua" value="salah">HTML<br><br>
+        <h3>3. Apa judul lagu yang diduga diplagiat oleh lagu 'Sayang' Via Vallen?</h3><br>
+        <input type='radio' id='txt31' name="tiga" value="salah">Qing Dei De Yi
+        <input type='radio' id='txt32' name="tiga" value="salah">Ting Hai
+        <input type='radio' id='txt33' name="tiga" value="benar">Mirai E Kirono
+        <input type='radio' id='txt34' name="tiga" value="salah">Hau Siang Hau Siang<br><br>
+        <h3>4. Siapakah sosok dibalik topeng Batman?</h3><br>
+        <input type='radio' id='txt41' name="empat" value="salah">Natasha Romanov
+        <input type='radio' id='txt42' name="empat" value="salah">Peter Parker
+        <input type='radio' id='txt43' name="empat" value="salah">Tony Stark
+        <input type='radio' id='txt44' name="empat" value="benar">Bruce Wayne<br><br><br><br>
+ 
+        <input type='button' value="S U B M I T" onclick="tampil()">    
+    </form>
+
+    <label id="lblMuncul"></label>
+</body>
+
+<script>
+    
+    function tampil() {
+        var hasil = 0;
+        var jumlahSoal = 4;
+        var jumlahOpsi = 4;
+        document.getElementsByClassName
+        for(var i =1; i<=jumlahSoal; i++){
+            for(var j=1; j<=jumlahOpsi; j++){
+                var jawaban = document.getElementById("txt"+i+j).checked;
+                if(jawaban==true){
+                    if(document.getElementById("txt"+i+j).value=="benar"){
+                        hasil++;
+                    }
+                }
+            }
+        }
+        var nilai = (hasil/jumlahSoal)*100
+        document.getElementById("lblMuncul").innerHTML = "Nilai akhir anda "+nilai;
+    }
+</script>
+
+</html>

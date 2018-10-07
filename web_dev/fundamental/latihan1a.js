@@ -1,0 +1,1 @@
+console.log('latihan1a');

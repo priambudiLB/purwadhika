@@ -1,0 +1,83 @@
+<!-- EXERCISES -->
+<!-- 1 -->
+<script>
+    var latihanX = 4;
+    var latihanY = 3;
+    var latihanZ = 2;
+    var latihanW = ((latihanX+(latihanY*latihanZ))/(latihanX*latihanY))**latihanZ;
+
+    console.log(latihanW);
+    alert("Jawaban nomor 1:\n"+latihanW)
+</script>
+
+<!-- 2 -->
+<script>
+    var isLoop = true;
+    while (isLoop) {
+        var angka = prompt('Silakan masukkan sebuah angka untuk dikuadratkan:');
+        alert("Kuadrat dari "+angka+" adalah "+Math.pow(angka,2));
+        var isLoop = confirm("Coba lagi?");
+    }
+    
+</script>
+
+<!-- 3 -->
+<script>
+    console.log(Math.cbrt(8));
+</script>
+
+<!-- 4 -->
+<script>
+    var totalHari = prompt("Masukkan jumlah hari"); // 498
+    var tahun = Math.floor(totalHari/365);          // 1
+    var sisa1 = totalHari%365;                      // 133
+    var bulan = Math.floor(sisa1/30);               // 4
+    var sisa2 = sisa1%30;        
+                   // 18
+    var minggu = Math.floor(sisa2/7);               // 2
+    var sisa3 = sisa2%7;
+    var hari = Math.floor(sisa3);
+    //console.log(tahun+" tahun\n"+bulan+" bulan\n"+minggu+" minggu");
+    alert(tahun+" tahun\n"+bulan+" bulan\n"+minggu+" minggu\n"+hari+" hari");
+</script>
+
+<!-- 5 -->
+<script>
+    var jumlahUsia = 49;
+    var rasio = 0.4;
+
+    var budi = jumlahUsia/(rasio+1);
+    var andi = jumlahUsia - budi;
+    var andiAkir = andi+=2;
+    var budiAkhir = budi+=2;
+
+    alert(andiAkir+" "+budiAkhir);
+</script>
+
+<!-- 6 -->
+<script>
+    let base = new Date()
+    var tahun = base.getFullYear();
+    var bulan = base.getMonth()+1;
+    var tanggal = base.getDate();
+    alert("Hari ini tanggal "+tanggal+"-"+bulan+"-"+tahun);
+    alert("besok tanggal "+(tanggal+1)+"-"+bulan+"-"+tahun);
+    alert("kemarin tanggal "+(tanggal-1)+"-"+bulan+"-"+tahun);
+</script>
+
+<!-- 7 -->
+<script>
+    var kalimat = prompt("Masukkan sebuah kalimat:");
+    var jumlahh = (kata.match(/a/g) || []).length;
+    console.log(jumlahh);
+</script>
+
+<!-- 8 -->
+<script>
+
+</script>
+
+<!-- 9 -->
+<script>
+    document.write(Math.round(Math.random()*100));
+</script>

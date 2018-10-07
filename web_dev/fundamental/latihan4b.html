@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Purwadhika</title>
+</head>
+<body>
+username: <input type="text" id='userName'><br>
+password: <input type="password" id='passWord'><br>
+<input type="button" value="masuk" onclick="cek_login()">
+
+</body>
+</html>
+<script>
+function cek_login() {
+    var uname = document.getElementById('userName').value;
+    var pword = document.getElementById('passWord').value;
+
+    if((uname=="bagas"&&pword=="123")||(uname=="bagus"&&pword=="456")){
+        alert("oke");
+    } else {
+        alert("not oke");
+    }
+    // alert(uname+" "+pword);
+}
+</script>

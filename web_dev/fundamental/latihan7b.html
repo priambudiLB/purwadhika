@@ -1,0 +1,36 @@
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form>
+        Masukkan kalimat: <input type='text' id='txtAngka'><br>
+        Masukkan huruf: <input type='text' id='txtAngka2'><br>
+        <input type='button' value="cari" onclick="tampil()">
+        
+    </form>
+
+    <label id="lblMuncul"> Akan muncul di sini</label>
+</body>
+
+<script>
+    
+    function tampil() {
+        var kalimat = document.getElementById("txtAngka").value;
+        var huruf = document.getElementById("txtAngka2").value;
+        var hasil = 0;
+        
+        for(var a = 0; a<kalimat.length;a++){
+            if (kalimat.substring(a,a+1)==huruf){
+                hasil++;
+            }
+        }
+
+        document.getElementById("lblMuncul").innerHTML=hasil;
+    }
+</script>
+
+</html>
