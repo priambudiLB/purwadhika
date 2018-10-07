@@ -5,6 +5,7 @@ Repository untuk segala keperluan Purwadhika
 function study() {
  console.log("I am Studying");
 }
+study();
 ```
 
 As Grace Hopper said:
