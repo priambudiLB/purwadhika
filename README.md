@@ -1,4 +1,4 @@
-# purwadhika
+# Purwadhika
 Repository untuk segala keperluan Purwadhika
 
 ```javascript
@@ -9,5 +9,4 @@ study();
 ```
 
 As Grace Hopper said:
-> I’ve always been more interested
-> in the future than in the past.
+> I’ve always been more interested in the future than in the past.
