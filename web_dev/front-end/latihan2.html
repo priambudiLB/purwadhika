@@ -4,13 +4,14 @@
     </script>
 </head>
 <body>
-    <h1> Belajar jQuery </h1>
-    <h2> Belajar jQuery2</h2>
+        <h1 class="iniclass">Halo jQuery</h1>
+        <h1 id="iniid">jQuery Itu Asik</h1>
+        <p>Yuk kuasai <span>jQuery</span>!</p>
     <script>
         $(document).ready(function(){
-            // $('h1').hide();
-            // $('h1').show();
-            $('*').hide();
+            $('.iniclass').css('color','pink');
+ $('#iniid').css('color','blue');
+ $('p span').css('color','red');
         });
     </script>
 </body>

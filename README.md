@@ -2,11 +2,10 @@
 Repository untuk segala keperluan Purwadhika
 ---
 Code of the day
-```javascript
-function study() {
- console.log("I am Studying");
-}
-study();
+```
+git add .
+git commit -m "[your message]"
+git push origin master
 ```
 ---
 As :shipit: said:
