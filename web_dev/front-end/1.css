@@ -6,15 +6,75 @@ body{
     display: grid;
     grid-template-columns: repeat(35, 1fr);
     /* max-width: 960px; */
-    margin: 0 auto;
+    grid-template-rows: repeat(10, 1fr);
+    /* margin: 0 auto; */
 }
 
 #content div{
     background: rgb(215, 17, 73);
     padding: 18px;
+    /* border: 1px solid black; */
 }
 
 
-#content div:nth-child(n+36){
+#content div:nth-child(n+10){
     background: rgb(195, 15, 66);
+}
+
+#content div:nth-child(n+24){
+    background: rgb(245, 245, 245);
+}
+
+#content div:nth-child(n+25){
+    background: linear-gradient(to right, rgb(233,59,107), rgb(254, 126, 126));
+}
+
+.kotak1 {
+    grid-column: 1/7;
+}
+
+.kotak4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 9/16;
+}
+
+.kotak4 p{
+    background: white;
+    color: gray;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.kotak9 {
+    grid-column: 20/36;
+}
+
+.kotak10 {
+    grid-column: 1/7;
+    grid-row: 2/3;
+}
+
+.kotak11 {
+    grid-column: 7/8;
+}
+
+.kotak19 {
+    grid-column: 15/17;
+}
+
+.kotak23 {
+    grid-column: 20/36;
+}
+
+.kotak24 {
+    grid-column: 1/36;
+    grid-row: 3/6;
+    background: grey;
+}
+
+.kotak25 {
+    grid-column: 1/36;
+    grid-row: 6/9;
 }
