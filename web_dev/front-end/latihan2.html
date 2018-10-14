@@ -1,17 +1,23 @@
 <head>
-    <script src=
-        "js/jquery-3.3.1.min.js">
-    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style>
+        .myClass {
+            color: yellow;
+            background: blue;
+        }
+    </style>
 </head>
+
 <body>
-        <h1 class="iniclass">Halo jQuery</h1>
-        <h1 id="iniid">jQuery Itu Asik</h1>
-        <p>Yuk kuasai <span>jQuery</span>!</p>
+    <div id="container"><button id="btn1">Tombol</button>
+        <p class="para1">Iniparagraf1</p>
+        <p class="para2">Iniparagraf2</p>
+    </div>
     <script>
-        $(document).ready(function(){
-            $('.iniclass').css('color','pink');
- $('#iniid').css('color','blue');
- $('p span').css('color','red');
+        $(document).ready(function () { 
+            $('p.para1').css({color:'red',background:'yellow'});
+            $('p.para2').addClass('myClass');
+            //$('p.para2').removeClass('myClass');
         });
     </script>
 </body>

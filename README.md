@@ -1,7 +1,7 @@
 # Purwadhika
 Repository untuk segala keperluan Purwadhika
 ---
-Code of the day
+Code of this commit
 ```
 git add .
 git commit -m "[your message]"
