@@ -9,5 +9,5 @@ function study() {
 study();
 ```
 ---
-As Grace Hopper said:
+As :shipit: said:
 > I’ve always been more interested in the future than in the past.
