@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    background: #f5f5f5;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+    #header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        color: white;
+    }
+
+    #headerMenu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        color: white;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        max-width: 1300px;
+        margin: 0 auto;
+        grid-template-areas: "kotak1 kotak1 kotak1";
+    }
+}
+
+a[href] {
+    color: white;
+}
+
+.header1,
+.header2,
+.header3 {
+    padding: 20px;
+    background: #D71149;
+}
+
+.headerMenu1,
+.headerMenu2 {
+    background: #C30F42;
+    padding: 15px;
+}
+
+.kotak1 {
+    grid-area: kotak1;
+    padding: 240px;
+    background: url("../img/promo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+.kotak2,
+.kotak3,
+.kotak4,
+.kotak5,
+.kotak6,
+.kotak7 {
+    padding: 150px;
+    background: url("../img/barang.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+#footer {
+    background: #f3f3f3;
+    color: black;
+    padding: 30px;
+}
+#box{
+    background:purple;
+    color:yellow;
+    width:80px;
+    height:80px;
+    position:relative;
+    text-align:center;
+    padding: 20px
+}

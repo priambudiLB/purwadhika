@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LapakDotCom eCommerce</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header1">
+            <a href="#">Kategori</a>
+        </div>
+        <div class="header2"><input id="input" size="40" type="text"></div>
+        <div class="header3">Status Trx, Cart, Login Signup</div>
+    </div>
+    <div id="headerMenu">
+        <div class="headerMenu1">Menu Kiri</div>
+        <div class="headerMenu2">Menu Kanan</div>
+    </div>
+    <div id="content">
+        <div class="kotak1"></div>
+        <div class="kotak2">2</div>
+        <div class="kotak3">3</div>
+        <div class="kotak4">4</div>
+        <div class="kotak5">5</div>
+        <div class="kotak6">6</div>
+        <div class="kotak7">7</div>
+    </div>
+    <div id="footer">
+        © 2018 Hak Cipta Terpelihara PT LapakDotCom
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.kotak1, .kotak2, .kotak4, .kotak5, .kotak6, .kotak7, .kotak3, .kotak3').hover(
+                function(){
+                    $(this).stop(true).fadeTo("slow", 1);
+                },
+                function(){
+                    $(this).stop(true).fadeTo("slow", 0.6);
+                }
+            );
+            });
+    </script>
+</body>
+
+</html>
